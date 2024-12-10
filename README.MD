@@ -68,3 +68,7 @@
 ## Responsividade:
     - Ter o layout correto para larguras de tela com 350px ou mais.
     - Não considerar larguras menores que 350px.
+
+## Diagramas
+### Use-case
+![Use cases](/out/docs/use-cases/use-cases.png)
