@@ -1,0 +1,38 @@
+<table class="table ">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Remover</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td><input type="text" placeholder="filtrar por nome" class="form-control"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td><a href="#">Fisioterapeuta</a></td>
+      <td><img src="/prototype/components/table-area/svg/trash3-fill.svg" width="20" height="20" alt="remove Area"></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td><a href="#">Cardiologista</a></td>
+      <td><img src="/prototype/components/table-area/svg/trash3-fill.svg" width="20" height="20" alt="remove Area"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td><a href="#">Neurologista</a></td>
+      <td><img src="/prototype/components/table-area/svg/trash3-fill.svg" width="20" height="20" alt="remove Area"></td>
+    </tr>
+  </tbody>
+</table>
+<div id="paginator"></div>
+
+<script>
+  $(function(){
+    $("#paginator").load("/prototype/components/paginator/paginator.html");
+  })
+</script>
