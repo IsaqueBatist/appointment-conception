@@ -1,0 +1,54 @@
+@startmindmap "end_points"
+* /api/v1
+
+    ** /appointments
+        ***[#LightPink] GET, GET/{id}, POST, PUT
+          ****[#LightSalmon] ADMIM, OPERATOR
+
+    ** /appointment-types
+        ***[#LightPink] GET, GET/{id}
+            ****[#LightSalmon] ADMIM, OPERATOR
+        ***[#LightPink] POST, DELETE/{id}, PUT/{id}
+            ****[#LightSalmon] ADMIN
+    
+    ** /areas
+        ***[#LightPink] GET, GET/{id}
+            ****[#LightSalmon] ADMIN, OPERATOR
+        ***[#LightPink] POST, DELETE, PUT
+            ****[#LightSalmon] ADMIN
+        *** /{id}/professionals
+            ****[#LightPink] GET
+                *****[#LightSalmon] ADMIN, OPERATOR
+
+
+    ** /clients
+        ***[#LightPink] GET?, GET/{id}, DELETE/{id}, PUT/{id}, POST 
+            ****[#LightSalmon] ADMIM, OPERATOR
+        *** /{id}/appointments
+            ****[#LightPink] GET?
+                *****[#LightSalmon] ADMIM, OPERATOR
+
+    ** /professionals
+        ***[#LightPink] GET, GET/{id} 
+            ****[#LightSalmon] ADMIM, OPERATOR
+        ***[#LightPink] POST, DELETE/{id}, PUT/{id}
+            ****[#LightSalmon] ADMIN
+        *** /{id}/appointments
+            ****[#LightPink] GET?
+                *****[#LightSalmon] ADMIM, OPERATOR
+        *** /{id}/areas
+            ****[#LightPink] GET
+                *****[#LightSalmon] ADMIM
+        *** /{id}/availability-days?
+          ****[#LightPink] GET
+                *****[#LightSalmon] ADMIM, OPERATOR
+        *** /{id}/availability-times?
+          ****[#LightPink] GET
+                *****[#LightSalmon] ADMIM, OPERATOR
+        *** /{id}/workdays
+            ****[#LightPink] GET, POST, DELETE/{id}, PUT/{id}
+                *****[#LightSalmon] ADMIM
+    ** /users
+      ***[#LightPink] GET, GET/{id}, POST, DELETE/{id}, PUT/{id}
+            ****[#LightSalmon] ADMIN
+@endmindmap
