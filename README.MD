@@ -74,3 +74,5 @@
 ![Use cases](/out/docs/use-cases/use-cases.png)
 ### Model
 ![Model](/out/docs/model/model.png)
+### Endpoints
+![Endpoints](/out/docs/end-points/end_points.png)
